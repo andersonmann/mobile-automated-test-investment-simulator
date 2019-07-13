@@ -8,19 +8,19 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.Status;
 
+import io.appium.java_client.MobileElement;
 import util.ExtentTestManager;
 
 /**
  * @author anderson.mann
  *
  */
-public class BasePage extends BrowserFactory {
+public class BasePage extends DriverFactory {
 	protected ExtentTestManager log = new ExtentTestManager();
 
 	/**
@@ -115,7 +115,7 @@ public class BasePage extends BrowserFactory {
 	public boolean existElement(By by) throws NoSuchElementException {
 		try {
 			waitForElement(by);
-			List<WebElement> elementos = driver.findElements(by);
+			List<MobileElement> elementos = driver.findElements(by);
 			log.getTest().log(Status.INFO, "validating existence of the text: " + by);
 			return elementos.size() > 0;
 		} catch (Exception e) {
