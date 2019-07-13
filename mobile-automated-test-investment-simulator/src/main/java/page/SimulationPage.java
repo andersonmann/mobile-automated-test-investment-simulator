@@ -84,7 +84,7 @@ public class SimulationPage extends BasePage implements Simulation {
 		inputMonthlylValue(monthlyValue);
 		inputTime(time);
 		selectTimeType(timeType);
-	}	
+	}
 
 	public void simulateInvestiment(String profile, String initialValue, String monthlyValue, String time,
 			String timeType) {
