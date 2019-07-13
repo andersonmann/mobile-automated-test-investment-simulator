@@ -65,7 +65,7 @@ public class SimulationPage extends BasePage implements Simulation {
 		}
 	}
 
-	public void clickSimuteButton() {
+	public void clicksimulateButton() {
 		log.getTest().log(Status.INFO, "clicking at the button SIMULAR");
 		click(By.xpath("//button[@class='btn btnAmarelo btnSimular']"));
 	}
@@ -89,7 +89,7 @@ public class SimulationPage extends BasePage implements Simulation {
 	public void simulateInvestiment(String profile, String initialValue, String monthlyValue, String time,
 			String timeType) {
 		flowSimulateInvestment(profile, initialValue, monthlyValue, time, timeType);
-		clickSimuteButton();
+		clicksimulateButton();
 	}
 
 	public void inputDataAndCleanFields(String profile, String initialValue, String monthlyValue, String time,
@@ -100,6 +100,6 @@ public class SimulationPage extends BasePage implements Simulation {
 
 	public void validateMandatoryFields() {
 		scrollToDown();
-		clickSimuteButton();
+		clicksimulateButton();
 	}
 }
