@@ -63,6 +63,7 @@ public class BasePage extends DriverFactory {
 		try {
 			waitForElement(by);
 			driver.findElement(by).sendKeys(text);
+			driver.hideKeyboard();
 		} catch (Exception e) {
 			throw new NoSuchElementException("Element not found: " + e.getMessage());
 		}
