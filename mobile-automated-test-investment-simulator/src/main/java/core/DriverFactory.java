@@ -3,13 +3,18 @@
  */
 package core;
 
+import static org.testng.Assert.assertTrue;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -44,7 +49,7 @@ public class DriverFactory {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		driver.get(url);
-	}
+	}	
 
 	@AfterMethod
 	public static void killDriver() {
