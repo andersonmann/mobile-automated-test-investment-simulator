@@ -1,14 +1,5 @@
 package test;
 
-public class A {
-
-}
-
-/**
- * 
- */
-package test;
-
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
