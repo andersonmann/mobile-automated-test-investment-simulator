@@ -126,7 +126,7 @@ You just must execute the suite test (suite.xml).
 * [TestNG](https://testng.org/doc/documentation-main.html/) - The automation framework used
 * [MAVEN](https://maven.apache.org/) - Dependency Management
 * [JAVA](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html/) - Programing language
-* [APPIUM](http://appium.io/)
+* [APPIUM](http://appium.io/) - The automation framework to mobile connection
 * [SonarLint](https://www.sonarlint.org/eclipse/) - Lint
 
 
