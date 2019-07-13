@@ -70,7 +70,7 @@ public class SimulationPage extends BasePage implements Simulation {
 		click(By.xpath("//button[@class='btn btnAmarelo btnSimular']"));
 	}
 
-	public void clickCleanFormkButton() {
+	public void clickCleanFormButton() {
 		log.getTest().log(Status.INFO, "clicking at the button Limpar formulário");
 		click(By.className("btn btnAmarelo btnSimular"));
 	}
@@ -95,7 +95,7 @@ public class SimulationPage extends BasePage implements Simulation {
 	public void inputDataAndCleanFields(String profile, String initialValue, String monthlyValue, String time,
 			String timeType) {
 		flowSimulateInvestment(profile, initialValue, monthlyValue, time, timeType);
-		clickCleanFormkButton();
+		clickCleanFormButton();
 	}
 
 	public void validateMandatoryFields() {
