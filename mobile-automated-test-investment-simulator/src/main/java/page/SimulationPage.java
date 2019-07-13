@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 
 import com.aventstack.extentreports.Status;
 
@@ -85,7 +84,7 @@ public class SimulationPage extends BasePage implements Simulation {
 		inputMonthlylValue(monthlyValue);
 		inputTime(time);
 		selectTimeType(timeType);
-	}
+	}	
 
 	public void simulateInvestiment(String profile, String initialValue, String monthlyValue, String time,
 			String timeType) {
